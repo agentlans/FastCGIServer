@@ -19,12 +19,10 @@ For developing FastCGI scripts:
 1. write your FastCGI scripts in C
 2. compile the `*.c` files with `-static` and `-lfcgi` flags if you're using GCC
 3. clone this repository and put the compiled files into the `app` subdirectory of this repo
-4. edit `config/lighttpd.conf` to set up the URL endpoints for your scripts
-  - it's at the bottom of the conf file.
+4. edit `config/lighttpd.conf` to set up the URL endpoints for your scripts. It's at the bottom of the conf file.
 5. execute `make run` to start the server
-6. visit `http://localhost:80` with your web browser or run `curl http://localhost:80` to see the script's output.
-  - the URL depends on how you set up the endpoints in step 4
-7. type `Ctrl + C` on the terminal to shut the server down
+6. visit `http://localhost:80` with your web browser or run `curl http://localhost:80` to see the script's output. The URL depends on how you set up the endpoints in step 4.
+7. type `Ctrl + C` on the terminal to shut the server down.
 
 # Author, Licence
 
